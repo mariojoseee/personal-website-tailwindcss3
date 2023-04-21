@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.technology-sm {
+		@apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white;
+	}
+
+	.technology-lg {
+		@apply scale-125 mr-6;
+	}
+}
