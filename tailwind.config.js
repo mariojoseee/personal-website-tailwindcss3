@@ -4,9 +4,12 @@ module.exports = {
 	theme: {
 		container: {
 			center: true,
-			padding: "16px",
+			padding: "20px",
 		},
 		extend: {
+			fontFamily: {
+				overlock: "Overlock",
+			},
 			colors: {
 				primary: "#0ea5e9",
 				secondary: "#64748b",
@@ -14,6 +17,20 @@ module.exports = {
 			},
 			screens: {
 				"2xl": "1320px",
+			},
+			animation: {
+				"spin-slow": "spin 3s linear infinite",
+				hi: "keyHi 1s ease-in-out infinite",
+			},
+			keyframes: {
+				keyHi: {
+					"0%, 100%": {
+						transform: "rotate(-15deg)",
+					},
+					"50%": {
+						transform: "rotate(1deg)",
+					},
+				},
 			},
 		},
 	},
